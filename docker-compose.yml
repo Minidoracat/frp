@@ -1,7 +1,7 @@
 version: '3'
 services:
   frpc:
-    image: snowdreamtech/frps
+    image: snowdreamtech/frpc
     restart: always
     volumes:
       - ./config/frpc.ini:/etc/frp/frpc.ini
