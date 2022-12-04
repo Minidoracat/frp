@@ -5,7 +5,7 @@ services:
     restart: always
     volumes:
       - ./config/frpc.ini:/etc/frp/frpc.ini
-      - ./config:/frp/config
+      # - ./config:/frp/config
       - ./log:/frp/log
     network_mode: host
     # extra_hosts:
@@ -20,6 +20,7 @@ services:
     restart: always
     volumes:
       - ./config/frps.ini:/etc/frp/frps.ini
+      # - ./config:/frp/config
       - ./log:/frp/log
     network_mode: host
 #     ports:
